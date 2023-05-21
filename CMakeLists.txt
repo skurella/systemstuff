@@ -10,7 +10,7 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(googletest)
 
-file(GLOB SRCS *.cpp *.hpp)
+file(GLOB SRCS *.cpp)
 
 add_executable(systemstuff ${SRCS})
 target_link_libraries(systemstuff gtest_main)
